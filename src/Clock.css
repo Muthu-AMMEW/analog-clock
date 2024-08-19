@@ -6,6 +6,12 @@
     --sec: rgb(0, 128, 128);
 }
 
+.mm-body {
+    background-color: rgb(18, 197, 47);
+    width: 100vh;
+    height: 100vh;
+}
+
 .clock {
     width: 60vh;
     height: 60vh;
@@ -31,4 +37,16 @@
     height: 85%;
     box-shadow: 0 0 3px red;
     background-color: var(--clock-bg);
+}
+
+.clock-center {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }

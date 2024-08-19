@@ -3,12 +3,21 @@ import './Clock.css';
 function Clock() {
 
   return (
-   <div className='mmbody d-flex justify-content-center align-items-center'>
-    <div className='clock'>
-      <div className='clock-inner-bg'></div>
-      <div className='clock-inner-bg'></div>
+   <div className=' container-fluid'>
+    <div className='row'>
+      <div className='col clock'>
+        <div ClassName="clock-inner-bg"></div>
+          <div ClassName="clock-inner-bg">
+            <div ClassName="clock-markers">
+              {()=>{return(`<div ClassName="clock-mark"></div>`*60)}}
+            </div>
+          </div>
+          <div class="needle hrs"></div>
+          <div class="needle min"></div>
+          <div class="needle sec"></div>
+          <div class="clock-center"></div>
+      </div>
     </div>
-
    </div>
   );
 }
